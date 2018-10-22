@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         webview = (WebView) findViewById(R.id.webview);
+        webview.setWebViewClient(new WebViewClient());
         WebSettings settings = webview.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
